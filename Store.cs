@@ -10,8 +10,17 @@ namespace ConsoleApp1
     {
         public static void Start()
         {
-            
+            // Opret 3 pizzaobjekter
+
+            // Opret 3 kundeobjekter
+
+            // Opret 3 ordreobjekter
+
+            // Udskriv ordreinformationer
+
+            // Test CalculateTotalPrice metoden
+
         }
-            
+
     }
 }
