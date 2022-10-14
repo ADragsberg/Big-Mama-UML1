@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Store
+    public class Store
     {
+        public static void Start()
+        {
+            // Opret 3 pizzaobjekter
+
+            // Opret 3 kundeobjekter
+
+            // Opret 3 ordreobjekter
+
+            // Udskriv ordreinformationer
+
+            // Test CalculateTotalPrice metoden
+
+        }
+
     }
 }
