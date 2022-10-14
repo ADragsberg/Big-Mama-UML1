@@ -10,6 +10,8 @@ namespace ConsoleApp1
     {
         private Pizza _pizza;
         private Kunde _kunde;
+        private int _leveringsGebyr = 40;
+        private double _moms = 1.25;
 
         public Ordre(Pizza pizza, Kunde kunde)
         {
@@ -17,9 +19,14 @@ namespace ConsoleApp1
             _kunde = kunde;
         }
 
-        public Pizza Pizza
+        public double CalculateTotalPrice()
         {
-            get { return _pizza; }
+            return (_pizza.Price + _leveringsGebyr) * _moms;
+        }
+        
+        public override string ToString()
+        {
+            return $"{_kunde} har bestilt: {_pizza}. \nTotalpris for ordren er: {CalculateTotalPrice()}";
         }
     }
 }
