@@ -40,7 +40,7 @@ namespace ConsoleApp1
         /// <returns></returns>
         public override string ToString()
         {
-            return $"pizzanavn: {Name}, pizzapris: {Price}";
+            return $"Pizzanavn: {Name}, Pizzapris: {Price}";
         }
         #endregion
     }
