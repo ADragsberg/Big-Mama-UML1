@@ -27,7 +27,7 @@ namespace ConsoleApp1
         
         public override string ToString()
         {
-            return $"{_kunde} har bestilt: {_pizza}. \nMed levering er totalpris for ordren: {CalculateTotalPrice()} kr. inklusiv moms";
+            return $"{_kunde} har bestilt: {_pizza}. \nMed levering er totalpris for ordren: {CalculateTotalPrice()} kr. inkl. moms";
         }
     }
 }
