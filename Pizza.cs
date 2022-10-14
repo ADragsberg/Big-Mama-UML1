@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Pizza
+    public class Pizza
     {
         #region Instance fields
         private string _Name;
