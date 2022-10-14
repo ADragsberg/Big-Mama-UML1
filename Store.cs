@@ -27,7 +27,9 @@ namespace ConsoleApp1
 
             // Udskriv ordreinformationer
             Console.WriteLine(order1);
+            Console.WriteLine();
             Console.WriteLine(order2);
+            Console.WriteLine();
             Console.WriteLine(order3);
 
             // Test CalculateTotalPrice metoden
