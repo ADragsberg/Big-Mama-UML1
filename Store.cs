@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Store
+    public class Store
     {
+        public static void Start()
+        {
+            
+        }
+            
     }
 }
