@@ -42,7 +42,7 @@ namespace ConsoleApp1
         #region Method
         public override string ToString()
         {
-            return $"Kunde: {FullName}";
+            return $"{FullName}";
         }
 
         #endregion
