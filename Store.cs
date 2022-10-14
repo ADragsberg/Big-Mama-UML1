@@ -31,6 +31,9 @@ namespace ConsoleApp1
             Console.WriteLine(order3);
 
             // Test CalculateTotalPrice metoden
+            //Console.WriteLine(order1.CalculateTotalPrice());
+            //Console.WriteLine(order2.CalculateTotalPrice());
+            //Console.WriteLine(order3.CalculateTotalPrice());
 
         }
 
