@@ -35,7 +35,7 @@ namespace ConsoleApp1
         }
         public string FullName
         {
-            get { return $"{ _firstname} { _lastname}"; }
+            get { return $"{FirstName} {LastName}"; }
         }
 
         #endregion
