@@ -13,6 +13,7 @@ namespace ConsoleApp1
         private int _leveringsGebyr = 40;
         private double _moms = 1.25;
 
+        // Ordre constructor
         public Ordre(Pizza pizza, Kunde kunde)
         {
             _pizza = pizza;
@@ -21,7 +22,7 @@ namespace ConsoleApp1
 
         public double CalculateTotalPrice()
         {
-            return (_pizza.Price + _leveringsGebyr) * _moms;
+            return (_pizza.Price + _leveringsGebyr) * _moms; // Vi antager at levering er valgt til hver gang.
         }
         
         public override string ToString()
