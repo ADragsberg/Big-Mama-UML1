@@ -1,33 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
+﻿namespace ConsoleApp1
 {
     public class Ordre
     {
+        #region Fields
         private Pizza _pizza;
         private Kunde _kunde;
-        private int _leveringsGebyr = 40;
-        private double _moms = 1.25;
+        private const int _leveringsGebyr = 40;
+        private const double _moms = 1.25;
+        #endregion
 
-        // Ordre constructor
+        
+        #region Constructor
         public Ordre(Pizza pizza, Kunde kunde)
         {
             _pizza = pizza;
             _kunde = kunde;
         }
+        #endregion
 
+
+        #region Methods
+        /// <summary>
+        /// Returnerer totalprisen for en ordre som en double
+        /// </summary>
         public double CalculateTotalPrice()
         {
             return (_pizza.Price + _leveringsGebyr) * _moms; // Vi antager at levering er valgt til hver gang.
         }
-        
+
         public override string ToString()
         {
             return $"{_kunde} har bestilt: {_pizza}. \nMed levering er totalpris for ordren: {CalculateTotalPrice()} kr. inkl. moms";
-        }
+        } 
+        #endregion
     }
 }
